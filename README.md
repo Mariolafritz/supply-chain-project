@@ -22,5 +22,6 @@ The script saves an HTML file:
 ``liefernetz_karte_with_blue_sea.html``  
 Open it in your browser to view the network.
 
-## Author
-[Your Name]
+## 👩‍💻 Author  
+Mariolafritz (Noubi)
+
