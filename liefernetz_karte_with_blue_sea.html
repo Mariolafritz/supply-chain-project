@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7579e165772cf566596f6ca783c3b9d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7579e165772cf566596f6ca783c3b9d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7579e165772cf566596f6ca783c3b9d = L.map(
+                "map_e7579e165772cf566596f6ca783c3b9d",
+                {
+                    center: [51.1657, 10.4515],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a215f6a27ddd6a0731975df66d0cc8bc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a215f6a27ddd6a0731975df66d0cc8bc.addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var marker_89326ba1a42ba8c019f70ae39c7ab693 = L.marker(
+                [49.9157398, 7.0708181],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_826bc021c16ec1c75db48c8d3a1a4675 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13373c2350e69e3865828a7a39bb7b08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5f5f00c8ffdda0d1e9ed9b808bb3bed = $(`<div id="html_b5f5f00c8ffdda0d1e9ed9b808bb3bed" style="width: 100.0%; height: 100.0%;">Winery_Mosel (Winery)<br>City: Bernkastel-Kues</div>`)[0];
+                popup_13373c2350e69e3865828a7a39bb7b08.setContent(html_b5f5f00c8ffdda0d1e9ed9b808bb3bed);
+            
+        
+
+        marker_89326ba1a42ba8c019f70ae39c7ab693.bindPopup(popup_13373c2350e69e3865828a7a39bb7b08)
+        ;
+
+        
+    
+    
+            marker_89326ba1a42ba8c019f70ae39c7ab693.bindTooltip(
+                `<div>
+                     Winery_Mosel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89326ba1a42ba8c019f70ae39c7ab693.setIcon(icon_826bc021c16ec1c75db48c8d3a1a4675);
+            
+    
+            var marker_fb1bc042c6cab0390083c58a46b926a8 = L.marker(
+                [49.9789358, 7.92339],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_aa645e057088b0c64fb951ed127f354b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94a1a6af1921983052b9774dcd1e98aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bfa87e0717f0c70648a0e5dcc0f681a = $(`<div id="html_4bfa87e0717f0c70648a0e5dcc0f681a" style="width: 100.0%; height: 100.0%;">Winery_Rheingau (Winery)<br>City: Rüdesheim am Rhein</div>`)[0];
+                popup_94a1a6af1921983052b9774dcd1e98aa.setContent(html_4bfa87e0717f0c70648a0e5dcc0f681a);
+            
+        
+
+        marker_fb1bc042c6cab0390083c58a46b926a8.bindPopup(popup_94a1a6af1921983052b9774dcd1e98aa)
+        ;
+
+        
+    
+    
+            marker_fb1bc042c6cab0390083c58a46b926a8.bindTooltip(
+                `<div>
+                     Winery_Rheingau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb1bc042c6cab0390083c58a46b926a8.setIcon(icon_aa645e057088b0c64fb951ed127f354b);
+            
+    
+            var marker_a4d8f01d0ecc5117cdfc5a7e09eca379 = L.marker(
+                [51.2254018, 6.7763137],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_a94d44a95e7b0336888de0adf275cdc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8295142193337c5bd8684c1b4c36a96e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9e99f3868f01eb8a7ee6bd6d0cae5a7 = $(`<div id="html_d9e99f3868f01eb8a7ee6bd6d0cae5a7" style="width: 100.0%; height: 100.0%;">Wholesaler (Wholesaler)<br>City: Düsseldorf</div>`)[0];
+                popup_8295142193337c5bd8684c1b4c36a96e.setContent(html_d9e99f3868f01eb8a7ee6bd6d0cae5a7);
+            
+        
+
+        marker_a4d8f01d0ecc5117cdfc5a7e09eca379.bindPopup(popup_8295142193337c5bd8684c1b4c36a96e)
+        ;
+
+        
+    
+    
+            marker_a4d8f01d0ecc5117cdfc5a7e09eca379.bindTooltip(
+                `<div>
+                     Wholesaler
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4d8f01d0ecc5117cdfc5a7e09eca379.setIcon(icon_a94d44a95e7b0336888de0adf275cdc3);
+            
+    
+            var marker_fbd69c3732dce77941a0c62d95e0bf23 = L.marker(
+                [51.5110321, 7.0960124],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_b1fd7b56634da059d004bbfd4809dcbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee3857331bda92dfefe8ef747c65b068 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfed350c5d282dcea019e5d405d85454 = $(`<div id="html_dfed350c5d282dcea019e5d405d85454" style="width: 100.0%; height: 100.0%;">Retailer (Retailer)<br>City: Gelsenkirchen</div>`)[0];
+                popup_ee3857331bda92dfefe8ef747c65b068.setContent(html_dfed350c5d282dcea019e5d405d85454);
+            
+        
+
+        marker_fbd69c3732dce77941a0c62d95e0bf23.bindPopup(popup_ee3857331bda92dfefe8ef747c65b068)
+        ;
+
+        
+    
+    
+            marker_fbd69c3732dce77941a0c62d95e0bf23.bindTooltip(
+                `<div>
+                     Retailer
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbd69c3732dce77941a0c62d95e0bf23.setIcon(icon_b1fd7b56634da059d004bbfd4809dcbf);
+            
+    
+            var marker_153962d68db9d5051d6919ec6d1c2cfb = L.marker(
+                [49.0068705, 8.4034195],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_e86518dbd49175b2a99c55ca28dab282 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5478323d35a8439e4e5bf7cb92c003f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8a40345f0a9d248e53827ff92190665 = $(`<div id="html_b8a40345f0a9d248e53827ff92190665" style="width: 100.0%; height: 100.0%;">Customer_1 (Customer)<br>City: Karlsruhe<br>Demand: 8 bottles</div>`)[0];
+                popup_5478323d35a8439e4e5bf7cb92c003f0.setContent(html_b8a40345f0a9d248e53827ff92190665);
+            
+        
+
+        marker_153962d68db9d5051d6919ec6d1c2cfb.bindPopup(popup_5478323d35a8439e4e5bf7cb92c003f0)
+        ;
+
+        
+    
+    
+            marker_153962d68db9d5051d6919ec6d1c2cfb.bindTooltip(
+                `<div>
+                     Customer_1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_153962d68db9d5051d6919ec6d1c2cfb.setIcon(icon_e86518dbd49175b2a99c55ca28dab282);
+            
+    
+            var marker_c15557c665ee42f69a52d2c8d2bc77c8 = L.marker(
+                [52.510885, 13.3989367],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_a71a84e4c746ec65d008348c228c90a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05e7bd2a88608f3beb232ccd563fed19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd8b6a7df7b01a5c2de1352d104777b5 = $(`<div id="html_bd8b6a7df7b01a5c2de1352d104777b5" style="width: 100.0%; height: 100.0%;">Customer_2 (Customer)<br>City: Berlin<br>Demand: 9 bottles</div>`)[0];
+                popup_05e7bd2a88608f3beb232ccd563fed19.setContent(html_bd8b6a7df7b01a5c2de1352d104777b5);
+            
+        
+
+        marker_c15557c665ee42f69a52d2c8d2bc77c8.bindPopup(popup_05e7bd2a88608f3beb232ccd563fed19)
+        ;
+
+        
+    
+    
+            marker_c15557c665ee42f69a52d2c8d2bc77c8.bindTooltip(
+                `<div>
+                     Customer_2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c15557c665ee42f69a52d2c8d2bc77c8.setIcon(icon_a71a84e4c746ec65d008348c228c90a5);
+            
+    
+            var marker_00ebfe5eacf5ed094742064322a31c7e = L.marker(
+                [51.434999, 6.759562],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_394b90d7153ddc8922b16201532edb9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4ebb560ea14bf79ee96324959f59c53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e9ebb6ddf6643228fec76001f5a6e59 = $(`<div id="html_2e9ebb6ddf6643228fec76001f5a6e59" style="width: 100.0%; height: 100.0%;">Customer_3 (Customer)<br>City: Duisburg<br>Demand: 8 bottles</div>`)[0];
+                popup_d4ebb560ea14bf79ee96324959f59c53.setContent(html_2e9ebb6ddf6643228fec76001f5a6e59);
+            
+        
+
+        marker_00ebfe5eacf5ed094742064322a31c7e.bindPopup(popup_d4ebb560ea14bf79ee96324959f59c53)
+        ;
+
+        
+    
+    
+            marker_00ebfe5eacf5ed094742064322a31c7e.bindTooltip(
+                `<div>
+                     Customer_3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00ebfe5eacf5ed094742064322a31c7e.setIcon(icon_394b90d7153ddc8922b16201532edb9b);
+            
+    
+            var marker_fdf90f429b0d9b3d49d74937bf605a6d = L.marker(
+                [52.0191005, 8.531007],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_a804b943a5ef22aa2927af45652e43f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54fc9156c220c7e99cfb2db4d5956a30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc3d8eedefe3a5f64876a7259bb5cb5d = $(`<div id="html_cc3d8eedefe3a5f64876a7259bb5cb5d" style="width: 100.0%; height: 100.0%;">Customer_4 (Customer)<br>City: Bielefeld<br>Demand: 6 bottles</div>`)[0];
+                popup_54fc9156c220c7e99cfb2db4d5956a30.setContent(html_cc3d8eedefe3a5f64876a7259bb5cb5d);
+            
+        
+
+        marker_fdf90f429b0d9b3d49d74937bf605a6d.bindPopup(popup_54fc9156c220c7e99cfb2db4d5956a30)
+        ;
+
+        
+    
+    
+            marker_fdf90f429b0d9b3d49d74937bf605a6d.bindTooltip(
+                `<div>
+                     Customer_4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdf90f429b0d9b3d49d74937bf605a6d.setIcon(icon_a804b943a5ef22aa2927af45652e43f5);
+            
+    
+            var marker_d87f849109397cdae075834d70e6350d = L.marker(
+                [50.0820384, 8.2416556],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_fa9621c82791c1eb9950bbf2bb521148 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2a41eb2e414bd68f08ef04e5c561ac2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df186b597a51d006298dc016a20a57dc = $(`<div id="html_df186b597a51d006298dc016a20a57dc" style="width: 100.0%; height: 100.0%;">Customer_5 (Customer)<br>City: Wiesbaden<br>Demand: 2 bottles</div>`)[0];
+                popup_b2a41eb2e414bd68f08ef04e5c561ac2.setContent(html_df186b597a51d006298dc016a20a57dc);
+            
+        
+
+        marker_d87f849109397cdae075834d70e6350d.bindPopup(popup_b2a41eb2e414bd68f08ef04e5c561ac2)
+        ;
+
+        
+    
+    
+            marker_d87f849109397cdae075834d70e6350d.bindTooltip(
+                `<div>
+                     Customer_5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d87f849109397cdae075834d70e6350d.setIcon(icon_fa9621c82791c1eb9950bbf2bb521148);
+            
+    
+            var marker_d11ec59df4d80d96b77ffe67a5104f8b = L.marker(
+                [51.3157833, 9.4978479],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_f1eaf0bf54abacaf1ea26b73ced96f71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc611f4bf899ec0f05f35f5e0e28fffc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1888fd71e17c7431b2af9d297d119c0b = $(`<div id="html_1888fd71e17c7431b2af9d297d119c0b" style="width: 100.0%; height: 100.0%;">Customer_6 (Customer)<br>City: kassel<br>Demand: 10 bottles</div>`)[0];
+                popup_fc611f4bf899ec0f05f35f5e0e28fffc.setContent(html_1888fd71e17c7431b2af9d297d119c0b);
+            
+        
+
+        marker_d11ec59df4d80d96b77ffe67a5104f8b.bindPopup(popup_fc611f4bf899ec0f05f35f5e0e28fffc)
+        ;
+
+        
+    
+    
+            marker_d11ec59df4d80d96b77ffe67a5104f8b.bindTooltip(
+                `<div>
+                     Customer_6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d11ec59df4d80d96b77ffe67a5104f8b.setIcon(icon_f1eaf0bf54abacaf1ea26b73ced96f71);
+            
+    
+            var marker_3ac4bb0b18b610c3e19ddda990d62724 = L.marker(
+                [50.938361, 6.959974],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_254534c03f9cda785b566dd813369b9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90177212154a85fe0b45fdb80ab5f002 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a38a80ff25abbe76144a6f75af823a5 = $(`<div id="html_0a38a80ff25abbe76144a6f75af823a5" style="width: 100.0%; height: 100.0%;">Customer_7 (Customer)<br>City: Köln<br>Demand: 7 bottles</div>`)[0];
+                popup_90177212154a85fe0b45fdb80ab5f002.setContent(html_0a38a80ff25abbe76144a6f75af823a5);
+            
+        
+
+        marker_3ac4bb0b18b610c3e19ddda990d62724.bindPopup(popup_90177212154a85fe0b45fdb80ab5f002)
+        ;
+
+        
+    
+    
+            marker_3ac4bb0b18b610c3e19ddda990d62724.bindTooltip(
+                `<div>
+                     Customer_7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ac4bb0b18b610c3e19ddda990d62724.setIcon(icon_254534c03f9cda785b566dd813369b9a);
+            
+    
+            var marker_208581109a7ae2364879cdeaf088ae5b = L.marker(
+                [49.0068705, 8.4034195],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_f5db2aafc3688dba6e7e3b1d37ac01e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed3d071723c860b7e8d6cf1f61cc0d51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db1c1ca9f14339e500ffc6c1c3057b59 = $(`<div id="html_db1c1ca9f14339e500ffc6c1c3057b59" style="width: 100.0%; height: 100.0%;">Customer_8 (Customer)<br>City: Karlsruhe<br>Demand: 10 bottles</div>`)[0];
+                popup_ed3d071723c860b7e8d6cf1f61cc0d51.setContent(html_db1c1ca9f14339e500ffc6c1c3057b59);
+            
+        
+
+        marker_208581109a7ae2364879cdeaf088ae5b.bindPopup(popup_ed3d071723c860b7e8d6cf1f61cc0d51)
+        ;
+
+        
+    
+    
+            marker_208581109a7ae2364879cdeaf088ae5b.bindTooltip(
+                `<div>
+                     Customer_8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_208581109a7ae2364879cdeaf088ae5b.setIcon(icon_f5db2aafc3688dba6e7e3b1d37ac01e6);
+            
+    
+            var marker_a133d9006f0c45d88c07dda5563ad058 = L.marker(
+                [51.4582235, 7.0158171],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_30c72423466365854502ff19cec6a743 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cff21529fcffb33ed1773ea00363a5c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d613cc88d2086342ac2eeee9554467cf = $(`<div id="html_d613cc88d2086342ac2eeee9554467cf" style="width: 100.0%; height: 100.0%;">Customer_9 (Customer)<br>City: Essen<br>Demand: 9 bottles</div>`)[0];
+                popup_cff21529fcffb33ed1773ea00363a5c5.setContent(html_d613cc88d2086342ac2eeee9554467cf);
+            
+        
+
+        marker_a133d9006f0c45d88c07dda5563ad058.bindPopup(popup_cff21529fcffb33ed1773ea00363a5c5)
+        ;
+
+        
+    
+    
+            marker_a133d9006f0c45d88c07dda5563ad058.bindTooltip(
+                `<div>
+                     Customer_9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a133d9006f0c45d88c07dda5563ad058.setIcon(icon_30c72423466365854502ff19cec6a743);
+            
+    
+            var marker_b8e867384af80650b791b17862508eac = L.marker(
+                [50.938361, 6.959974],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_e0af323d8112fa6230c765fa4886cada = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2cc6b0527682c4b0428d13141e0a4e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50ad11a1df5932388294f0ccca4a8b15 = $(`<div id="html_50ad11a1df5932388294f0ccca4a8b15" style="width: 100.0%; height: 100.0%;">Customer_10 (Customer)<br>City: Köln<br>Demand: 6 bottles</div>`)[0];
+                popup_b2cc6b0527682c4b0428d13141e0a4e0.setContent(html_50ad11a1df5932388294f0ccca4a8b15);
+            
+        
+
+        marker_b8e867384af80650b791b17862508eac.bindPopup(popup_b2cc6b0527682c4b0428d13141e0a4e0)
+        ;
+
+        
+    
+    
+            marker_b8e867384af80650b791b17862508eac.bindTooltip(
+                `<div>
+                     Customer_10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8e867384af80650b791b17862508eac.setIcon(icon_e0af323d8112fa6230c765fa4886cada);
+            
+    
+            var marker_b46aac50fe19fc55d5855ae6f0ccc70b = L.marker(
+                [52.510885, 13.3989367],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_081f00f99bbf6e3957b470fac12330ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f98913924c47b9765a6f244ef228fd0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50416abb4ff6e37607c10c9f7e39b9d0 = $(`<div id="html_50416abb4ff6e37607c10c9f7e39b9d0" style="width: 100.0%; height: 100.0%;">Customer_11 (Customer)<br>City: Berlin<br>Demand: 3 bottles</div>`)[0];
+                popup_f98913924c47b9765a6f244ef228fd0c.setContent(html_50416abb4ff6e37607c10c9f7e39b9d0);
+            
+        
+
+        marker_b46aac50fe19fc55d5855ae6f0ccc70b.bindPopup(popup_f98913924c47b9765a6f244ef228fd0c)
+        ;
+
+        
+    
+    
+            marker_b46aac50fe19fc55d5855ae6f0ccc70b.bindTooltip(
+                `<div>
+                     Customer_11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b46aac50fe19fc55d5855ae6f0ccc70b.setIcon(icon_081f00f99bbf6e3957b470fac12330ad);
+            
+    
+            var marker_d0bd6e979c77cc05a190585fc270f98e = L.marker(
+                [49.0068705, 8.4034195],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_48b856d803246114995f7168d1d61a15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33c4771741dba3d0eedc31e91c7fa9d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b03e108c93d97aea196660a037e763b = $(`<div id="html_2b03e108c93d97aea196660a037e763b" style="width: 100.0%; height: 100.0%;">Customer_12 (Customer)<br>City: Karlsruhe<br>Demand: 5 bottles</div>`)[0];
+                popup_33c4771741dba3d0eedc31e91c7fa9d0.setContent(html_2b03e108c93d97aea196660a037e763b);
+            
+        
+
+        marker_d0bd6e979c77cc05a190585fc270f98e.bindPopup(popup_33c4771741dba3d0eedc31e91c7fa9d0)
+        ;
+
+        
+    
+    
+            marker_d0bd6e979c77cc05a190585fc270f98e.bindTooltip(
+                `<div>
+                     Customer_12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0bd6e979c77cc05a190585fc270f98e.setIcon(icon_48b856d803246114995f7168d1d61a15);
+            
+    
+            var marker_02051de5c2fdd2c9f113945f987d525a = L.marker(
+                [51.9625101, 7.6251879],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_e5c24d8898d43a15135086a248529713 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfc7b54dcad2dd191c7b167942087485 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d042dd4426b76e3372188a52172f2cb = $(`<div id="html_1d042dd4426b76e3372188a52172f2cb" style="width: 100.0%; height: 100.0%;">Customer_13 (Customer)<br>City: Münster<br>Demand: 2 bottles</div>`)[0];
+                popup_bfc7b54dcad2dd191c7b167942087485.setContent(html_1d042dd4426b76e3372188a52172f2cb);
+            
+        
+
+        marker_02051de5c2fdd2c9f113945f987d525a.bindPopup(popup_bfc7b54dcad2dd191c7b167942087485)
+        ;
+
+        
+    
+    
+            marker_02051de5c2fdd2c9f113945f987d525a.bindTooltip(
+                `<div>
+                     Customer_13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02051de5c2fdd2c9f113945f987d525a.setIcon(icon_e5c24d8898d43a15135086a248529713);
+            
+    
+            var marker_cba5a23b0b54dc27c8df7db8852ebbb6 = L.marker(
+                [51.434999, 6.759562],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_a4e2f1fc30f26c613266e97f15fc855b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_506cd59be30cc13e40053d578df4739a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a9b7e794d8b7a5c274e1df8b8c4b691 = $(`<div id="html_0a9b7e794d8b7a5c274e1df8b8c4b691" style="width: 100.0%; height: 100.0%;">Customer_14 (Customer)<br>City: Duisburg<br>Demand: 5 bottles</div>`)[0];
+                popup_506cd59be30cc13e40053d578df4739a.setContent(html_0a9b7e794d8b7a5c274e1df8b8c4b691);
+            
+        
+
+        marker_cba5a23b0b54dc27c8df7db8852ebbb6.bindPopup(popup_506cd59be30cc13e40053d578df4739a)
+        ;
+
+        
+    
+    
+            marker_cba5a23b0b54dc27c8df7db8852ebbb6.bindTooltip(
+                `<div>
+                     Customer_14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cba5a23b0b54dc27c8df7db8852ebbb6.setIcon(icon_a4e2f1fc30f26c613266e97f15fc855b);
+            
+    
+            var marker_66e5b943f3d6649a8d6149dde8a974dd = L.marker(
+                [51.264018, 7.1780374],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_7a19226f824f3489774fd99669db4c0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c683395c19ae32e5b6be4c7aa770bb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_636d26865b4c60c7cd1a163e587a56e7 = $(`<div id="html_636d26865b4c60c7cd1a163e587a56e7" style="width: 100.0%; height: 100.0%;">Customer_15 (Customer)<br>City: Wuppertal<br>Demand: 10 bottles</div>`)[0];
+                popup_1c683395c19ae32e5b6be4c7aa770bb0.setContent(html_636d26865b4c60c7cd1a163e587a56e7);
+            
+        
+
+        marker_66e5b943f3d6649a8d6149dde8a974dd.bindPopup(popup_1c683395c19ae32e5b6be4c7aa770bb0)
+        ;
+
+        
+    
+    
+            marker_66e5b943f3d6649a8d6149dde8a974dd.bindTooltip(
+                `<div>
+                     Customer_15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66e5b943f3d6649a8d6149dde8a974dd.setIcon(icon_7a19226f824f3489774fd99669db4c0d);
+            
+    
+            var marker_6ebfd253234b91baeafbf2eaa4d470ae = L.marker(
+                [50.1106444, 8.6820917],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_8662ffafbf106f80d4987d9b91d7761d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b5f7dad13e6670e96eb12244df556fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1038031570be52010bc93f235768d030 = $(`<div id="html_1038031570be52010bc93f235768d030" style="width: 100.0%; height: 100.0%;">Customer_16 (Customer)<br>City: Frankfurt am Main<br>Demand: 7 bottles</div>`)[0];
+                popup_6b5f7dad13e6670e96eb12244df556fb.setContent(html_1038031570be52010bc93f235768d030);
+            
+        
+
+        marker_6ebfd253234b91baeafbf2eaa4d470ae.bindPopup(popup_6b5f7dad13e6670e96eb12244df556fb)
+        ;
+
+        
+    
+    
+            marker_6ebfd253234b91baeafbf2eaa4d470ae.bindTooltip(
+                `<div>
+                     Customer_16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ebfd253234b91baeafbf2eaa4d470ae.setIcon(icon_8662ffafbf106f80d4987d9b91d7761d);
+            
+    
+            var marker_b6a6298e3d95e3b96dac693168d7ab08 = L.marker(
+                [52.3744779, 9.7385532],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_0fea0fb931b8993db92a793820c3735c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_864efdc86c7ff0281290762883cc7124 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53606b2775a4043c29d289f6d8cda545 = $(`<div id="html_53606b2775a4043c29d289f6d8cda545" style="width: 100.0%; height: 100.0%;">Customer_17 (Customer)<br>City: Hannover<br>Demand: 3 bottles</div>`)[0];
+                popup_864efdc86c7ff0281290762883cc7124.setContent(html_53606b2775a4043c29d289f6d8cda545);
+            
+        
+
+        marker_b6a6298e3d95e3b96dac693168d7ab08.bindPopup(popup_864efdc86c7ff0281290762883cc7124)
+        ;
+
+        
+    
+    
+            marker_b6a6298e3d95e3b96dac693168d7ab08.bindTooltip(
+                `<div>
+                     Customer_17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b6a6298e3d95e3b96dac693168d7ab08.setIcon(icon_0fea0fb931b8993db92a793820c3735c);
+            
+    
+            var marker_f258fbb8518c14648db054039c11f706 = L.marker(
+                [53.550341, 10.000654],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_577b3cf0aea659dd07f6d5ef46f34a03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe2a295cece4544a223afacac59fe202 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_047fb82b5d1bca9aaf97866cc49f7860 = $(`<div id="html_047fb82b5d1bca9aaf97866cc49f7860" style="width: 100.0%; height: 100.0%;">Customer_18 (Customer)<br>City: Hamburg<br>Demand: 3 bottles</div>`)[0];
+                popup_fe2a295cece4544a223afacac59fe202.setContent(html_047fb82b5d1bca9aaf97866cc49f7860);
+            
+        
+
+        marker_f258fbb8518c14648db054039c11f706.bindPopup(popup_fe2a295cece4544a223afacac59fe202)
+        ;
+
+        
+    
+    
+            marker_f258fbb8518c14648db054039c11f706.bindTooltip(
+                `<div>
+                     Customer_18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f258fbb8518c14648db054039c11f706.setIcon(icon_577b3cf0aea659dd07f6d5ef46f34a03);
+            
+    
+            var marker_c1ce56bdc87929e76ac968f0f17832f4 = L.marker(
+                [49.0068705, 8.4034195],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_fcf59236d65a67d282b5433d78bb5e89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1815e191abea7864c66de2d8b9e1b887 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea92fb56b6e95d0d36609d7cf6d8b49f = $(`<div id="html_ea92fb56b6e95d0d36609d7cf6d8b49f" style="width: 100.0%; height: 100.0%;">Customer_19 (Customer)<br>City: Karlsruhe<br>Demand: 12 bottles</div>`)[0];
+                popup_1815e191abea7864c66de2d8b9e1b887.setContent(html_ea92fb56b6e95d0d36609d7cf6d8b49f);
+            
+        
+
+        marker_c1ce56bdc87929e76ac968f0f17832f4.bindPopup(popup_1815e191abea7864c66de2d8b9e1b887)
+        ;
+
+        
+    
+    
+            marker_c1ce56bdc87929e76ac968f0f17832f4.bindTooltip(
+                `<div>
+                     Customer_19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1ce56bdc87929e76ac968f0f17832f4.setIcon(icon_fcf59236d65a67d282b5433d78bb5e89);
+            
+    
+            var marker_901ef69ea8b28ddb24c4c02fc3d4ce39 = L.marker(
+                [51.9625101, 7.6251879],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_a34d4013432564f26a0faf2fda1c4258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_632d2ad65eab470702096b7b059a2368 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_293db0ffbb86ba4dcff3ea9cab3862bc = $(`<div id="html_293db0ffbb86ba4dcff3ea9cab3862bc" style="width: 100.0%; height: 100.0%;">Customer_20 (Customer)<br>City: Münster<br>Demand: 2 bottles</div>`)[0];
+                popup_632d2ad65eab470702096b7b059a2368.setContent(html_293db0ffbb86ba4dcff3ea9cab3862bc);
+            
+        
+
+        marker_901ef69ea8b28ddb24c4c02fc3d4ce39.bindPopup(popup_632d2ad65eab470702096b7b059a2368)
+        ;
+
+        
+    
+    
+            marker_901ef69ea8b28ddb24c4c02fc3d4ce39.bindTooltip(
+                `<div>
+                     Customer_20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_901ef69ea8b28ddb24c4c02fc3d4ce39.setIcon(icon_a34d4013432564f26a0faf2fda1c4258);
+            
+    
+            var marker_2f3768768e3b0f5f00f75e030c0ca5fc = L.marker(
+                [51.3157833, 9.4978479],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_c9ffaecbd7a45e2cb8f56226d9f9833b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4f95c33a934712decc59c983807fa26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e3ba92c92dcef70bc9ecf2937f4c452 = $(`<div id="html_6e3ba92c92dcef70bc9ecf2937f4c452" style="width: 100.0%; height: 100.0%;">Customer_21 (Customer)<br>City: kassel<br>Demand: 3 bottles</div>`)[0];
+                popup_a4f95c33a934712decc59c983807fa26.setContent(html_6e3ba92c92dcef70bc9ecf2937f4c452);
+            
+        
+
+        marker_2f3768768e3b0f5f00f75e030c0ca5fc.bindPopup(popup_a4f95c33a934712decc59c983807fa26)
+        ;
+
+        
+    
+    
+            marker_2f3768768e3b0f5f00f75e030c0ca5fc.bindTooltip(
+                `<div>
+                     Customer_21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f3768768e3b0f5f00f75e030c0ca5fc.setIcon(icon_c9ffaecbd7a45e2cb8f56226d9f9833b);
+            
+    
+            var marker_06365a752f47a38d05e91f199382178e = L.marker(
+                [52.3744779, 9.7385532],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_a62e11ae1a9a95fc05217cbc3ca3e68c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e795aebcf9efba78c5572213b4c4acb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88cbab36d26fac4f7aef4bc1b3109fd3 = $(`<div id="html_88cbab36d26fac4f7aef4bc1b3109fd3" style="width: 100.0%; height: 100.0%;">Customer_22 (Customer)<br>City: Hannover<br>Demand: 2 bottles</div>`)[0];
+                popup_e795aebcf9efba78c5572213b4c4acb2.setContent(html_88cbab36d26fac4f7aef4bc1b3109fd3);
+            
+        
+
+        marker_06365a752f47a38d05e91f199382178e.bindPopup(popup_e795aebcf9efba78c5572213b4c4acb2)
+        ;
+
+        
+    
+    
+            marker_06365a752f47a38d05e91f199382178e.bindTooltip(
+                `<div>
+                     Customer_22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06365a752f47a38d05e91f199382178e.setIcon(icon_a62e11ae1a9a95fc05217cbc3ca3e68c);
+            
+    
+            var marker_56d948ad8ae81051f2b3f5e9d5742fd4 = L.marker(
+                [49.4892913, 8.4673098],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_2d3284bf52b4e1665c301685b08ea17d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aee1ddd70abcb7116eaa7715fb076e92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ea4bef2c762aaedf67d55129f8d4b88 = $(`<div id="html_8ea4bef2c762aaedf67d55129f8d4b88" style="width: 100.0%; height: 100.0%;">Customer_23 (Customer)<br>City: Mannheim<br>Demand: 7 bottles</div>`)[0];
+                popup_aee1ddd70abcb7116eaa7715fb076e92.setContent(html_8ea4bef2c762aaedf67d55129f8d4b88);
+            
+        
+
+        marker_56d948ad8ae81051f2b3f5e9d5742fd4.bindPopup(popup_aee1ddd70abcb7116eaa7715fb076e92)
+        ;
+
+        
+    
+    
+            marker_56d948ad8ae81051f2b3f5e9d5742fd4.bindTooltip(
+                `<div>
+                     Customer_23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56d948ad8ae81051f2b3f5e9d5742fd4.setIcon(icon_2d3284bf52b4e1665c301685b08ea17d);
+            
+    
+            var marker_dd649cbb9c89f6581e2a11d63d7a4666 = L.marker(
+                [50.938361, 6.959974],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_27ef6f3c5b82bfa03b2888c7051a7b49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a0042941c6eb8bd1117213c510f2565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f1e5a6e74068eeb887fdbb9370233d3 = $(`<div id="html_6f1e5a6e74068eeb887fdbb9370233d3" style="width: 100.0%; height: 100.0%;">Customer_24 (Customer)<br>City: Köln<br>Demand: 6 bottles</div>`)[0];
+                popup_6a0042941c6eb8bd1117213c510f2565.setContent(html_6f1e5a6e74068eeb887fdbb9370233d3);
+            
+        
+
+        marker_dd649cbb9c89f6581e2a11d63d7a4666.bindPopup(popup_6a0042941c6eb8bd1117213c510f2565)
+        ;
+
+        
+    
+    
+            marker_dd649cbb9c89f6581e2a11d63d7a4666.bindTooltip(
+                `<div>
+                     Customer_24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd649cbb9c89f6581e2a11d63d7a4666.setIcon(icon_27ef6f3c5b82bfa03b2888c7051a7b49);
+            
+    
+            var marker_bb25bf19cb6eb6325f4dc5bcf9a827bd = L.marker(
+                [51.5142273, 7.4652789],
+                {
+}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var icon_b12d2294d5a120fee7e97f3229ae7d4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1fe6611e9c5c96ffd2458c48dfede44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e397a81918d2c23e14d17f0aabca997c = $(`<div id="html_e397a81918d2c23e14d17f0aabca997c" style="width: 100.0%; height: 100.0%;">Customer_25 (Customer)<br>City: Dortmund<br>Demand: 8 bottles</div>`)[0];
+                popup_e1fe6611e9c5c96ffd2458c48dfede44.setContent(html_e397a81918d2c23e14d17f0aabca997c);
+            
+        
+
+        marker_bb25bf19cb6eb6325f4dc5bcf9a827bd.bindPopup(popup_e1fe6611e9c5c96ffd2458c48dfede44)
+        ;
+
+        
+    
+    
+            marker_bb25bf19cb6eb6325f4dc5bcf9a827bd.bindTooltip(
+                `<div>
+                     Customer_25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb25bf19cb6eb6325f4dc5bcf9a827bd.setIcon(icon_b12d2294d5a120fee7e97f3229ae7d4e);
+            
+    
+            var poly_line_b531dca76dcd9907dd2008a2569ab8ff = L.polyline(
+                [[49.9157398, 7.0708181], [51.2254018, 6.7763137]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_1764e0a7fe89e36e267cb7ef5f3a048f = L.polyline(
+                [[49.9789358, 7.92339], [51.2254018, 6.7763137]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_11cf2b1428c2f096c9759fa6b717d5d8 = L.polyline(
+                [[51.2254018, 6.7763137], [51.5110321, 7.0960124]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_8f8e0a614f69a666d4eaf37006b0480d = L.polyline(
+                [[51.5110321, 7.0960124], [49.0068705, 8.4034195]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_9752412e7fe4834ed14b526e24cdc062 = L.polyline(
+                [[51.5110321, 7.0960124], [52.510885, 13.3989367]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_c8255587bdb4b36dd23385849837d9d4 = L.polyline(
+                [[51.5110321, 7.0960124], [51.434999, 6.759562]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_ff8b5df70fffb717bfc02f8d7aad80c1 = L.polyline(
+                [[51.5110321, 7.0960124], [52.0191005, 8.531007]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_c6a070ed5b262d13dfe3930ed31bd025 = L.polyline(
+                [[51.5110321, 7.0960124], [50.0820384, 8.2416556]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_921616a9a840b16bab8d24befc6ca4d8 = L.polyline(
+                [[51.5110321, 7.0960124], [51.3157833, 9.4978479]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_79edbaa6c531ca4a9b920e5498ba8615 = L.polyline(
+                [[51.5110321, 7.0960124], [50.938361, 6.959974]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_28edf9600be4d5669031bf7cbfe20afc = L.polyline(
+                [[51.5110321, 7.0960124], [49.0068705, 8.4034195]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_73f9a0d2790644c06e09ab2684fcba42 = L.polyline(
+                [[51.5110321, 7.0960124], [51.4582235, 7.0158171]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_66fc0c7414e214b750ebd5b6e853da7b = L.polyline(
+                [[51.5110321, 7.0960124], [50.938361, 6.959974]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_79eed8c9218f14dfb3da6db8f6548226 = L.polyline(
+                [[51.5110321, 7.0960124], [52.510885, 13.3989367]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_888486d4ed37a808952e7ff1bc5bc642 = L.polyline(
+                [[51.5110321, 7.0960124], [49.0068705, 8.4034195]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_b87548194f9caf4f5c176e4705e07262 = L.polyline(
+                [[51.5110321, 7.0960124], [51.9625101, 7.6251879]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_d17f7812fbb9a813274b123c24681522 = L.polyline(
+                [[51.5110321, 7.0960124], [51.434999, 6.759562]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_3c31afb1fa3f2ebed6992a25fcae587f = L.polyline(
+                [[51.5110321, 7.0960124], [51.264018, 7.1780374]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_b5ddc604bddfb079f2c1adcb81ae9758 = L.polyline(
+                [[51.5110321, 7.0960124], [50.1106444, 8.6820917]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_57f9fa1ee819b882553c28ea9e5c574f = L.polyline(
+                [[51.5110321, 7.0960124], [52.3744779, 9.7385532]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_9fe88ba6111824b776668a84266b4fb6 = L.polyline(
+                [[51.5110321, 7.0960124], [53.550341, 10.000654]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_cf8e3c520c7015452512404630b6a443 = L.polyline(
+                [[51.5110321, 7.0960124], [49.0068705, 8.4034195]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_e84065eaf76377e02e8e2178b61e9a29 = L.polyline(
+                [[51.5110321, 7.0960124], [51.9625101, 7.6251879]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_0cbd7b25182191ed501b94b6037157cf = L.polyline(
+                [[51.5110321, 7.0960124], [51.3157833, 9.4978479]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_d381d4957978fbb54268657f7658429f = L.polyline(
+                [[51.5110321, 7.0960124], [52.3744779, 9.7385532]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_56322ae67e049c8243864d47e6208a33 = L.polyline(
+                [[51.5110321, 7.0960124], [49.4892913, 8.4673098]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_f5ce96f1289291107a1ee3e2305fb07c = L.polyline(
+                [[51.5110321, 7.0960124], [50.938361, 6.959974]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+    
+            var poly_line_ef952d495b9fe1eccf7a0222edfe0286 = L.polyline(
+                [[51.5110321, 7.0960124], [51.5142273, 7.4652789]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_e7579e165772cf566596f6ca783c3b9d);
+        
+</script>
+</html>
