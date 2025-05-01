@@ -108,7 +108,7 @@ node_colors = {
     "Winery": "red",
     "Wholesaler": "orange",
     "Retailer": "blue",
-    "Customer": "greeng"
+    "Customer": "green"
 }
 node_icons = {
     "Winery": "industry",
